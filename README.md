@@ -103,6 +103,42 @@ EngiNotes is a modern, responsive web application for engineering students and e
 
 ---
 
+## 🚀 Deploying to Vercel
+
+This repository is pre-configured for 1-click deployment on [Vercel](https://vercel.com):
+
+### Option A: Deploy via GitHub (Recommended)
+1. Push this repository to GitHub (see instructions below).
+2. Go to your [Vercel Dashboard](https://vercel.com/dashboard) and click **"Add New..." > "Project"**.
+3. Select your GitHub repository.
+4. Vercel automatically detects the Vite framework and applies the settings:
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+5. *(Optional)* In **Environment Variables**, add:
+   - `GEMINI_API_KEY`: Your Google Gemini API key (for live AI answering & PDF summarizer).
+6. Click **Deploy**!
+
+### Option B: Deploy via Vercel CLI
+```bash
+# 1. Install Vercel CLI globally (if not already installed)
+npm install -g vercel
+
+# 2. Deploy to preview
+vercel
+
+# 3. Deploy to production
+vercel --prod
+```
+
+The app includes:
+- Production-optimized Vite React bundle in `dist/`.
+- Serverless API handler in `api/index.ts` powering `/api/gemini/solve` and `/api/gemini/summarize-pdf`.
+- Built-in fallback responses if the Gemini API key is not configured.
+- `vercel.json` rewrite configuration for seamless client-side SPA routing and serverless API proxying.
+
+---
+
 ## 📤 How to Upload to GitHub
 
 ### Method 1: Using the Terminal (Recommended)
