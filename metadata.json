@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix Remix EngiNotes - College \u0026 Engineering Study Hub",
+  "description": "Discover, share, and preview verified engineering lecture notes, handwritten summaries, PYQs, and branch syllabi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

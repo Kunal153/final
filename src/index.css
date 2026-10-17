@@ -1,0 +1,334 @@
+@import "tailwindcss";
+
+:root, [data-theme="dark"] {
+  --bg-app: #212121;
+  --bg-sidebar: #171717;
+  --bg-surface: #2F2F2F;
+  --bg-surface-hover: #383838;
+  --bg-subtle: #262626;
+  --border-color: #424242;
+  --border-subtle: #333333;
+  --text-main: #ECECEC;
+  --text-muted: #8E8E8E;
+  --btn-primary-bg: #ECECEC;
+  --btn-primary-text: #212121;
+  --scrollbar-bg: #212121;
+  --scrollbar-thumb: #424242;
+}
+
+[data-theme="light"] {
+  --bg-app: #F7F7F8;
+  --bg-sidebar: #FFFFFF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-hover: #F0F0F2;
+  --bg-subtle: #F3F4F6;
+  --border-color: #E5E7EB;
+  --border-subtle: #EFEFEF;
+  --text-main: #18181B;
+  --text-muted: #71717A;
+  --btn-primary-bg: #18181B;
+  --btn-primary-text: #FFFFFF;
+  --scrollbar-bg: #F7F7F8;
+  --scrollbar-thumb: #D1D5DB;
+}
+
+[data-theme="midnight"] {
+  --bg-app: #0B1120;
+  --bg-sidebar: #070D18;
+  --bg-surface: #152238;
+  --bg-surface-hover: #1E2E4A;
+  --bg-subtle: #0F1A2C;
+  --border-color: #243552;
+  --border-subtle: #19273D;
+  --text-main: #F1F5F9;
+  --text-muted: #94A3B8;
+  --btn-primary-bg: #38BDF8;
+  --btn-primary-text: #0B1120;
+  --scrollbar-bg: #0B1120;
+  --scrollbar-thumb: #243552;
+}
+
+[data-theme="emerald"] {
+  --bg-app: #0B1712;
+  --bg-sidebar: #06100C;
+  --bg-surface: #142820;
+  --bg-surface-hover: #1C382C;
+  --bg-subtle: #0F2019;
+  --border-color: #244839;
+  --border-subtle: #193328;
+  --text-main: #F0FDF4;
+  --text-muted: #86EFAC;
+  --btn-primary-bg: #10B981;
+  --btn-primary-text: #06100C;
+  --scrollbar-bg: #0B1712;
+  --scrollbar-thumb: #244839;
+}
+
+[data-theme="colourful"] {
+  --bg-app: #130D24;
+  --bg-sidebar: #0D0819;
+  --bg-surface: #22163D;
+  --bg-surface-hover: #312057;
+  --bg-subtle: #1B1133;
+  --border-color: #3D286C;
+  --border-subtle: #2C1D4E;
+  --text-main: #FDF4FF;
+  --text-muted: #D8B4FE;
+  --btn-primary-bg: #C084FC;
+  --btn-primary-text: #130D24;
+  --scrollbar-bg: #130D24;
+  --scrollbar-thumb: #3D286C;
+}
+
+[data-theme="sunset"] {
+  --bg-app: #1A1412;
+  --bg-sidebar: #120D0B;
+  --bg-surface: #291F1B;
+  --bg-surface-hover: #3B2D27;
+  --bg-subtle: #211915;
+  --border-color: #4A3830;
+  --border-subtle: #332620;
+  --text-main: #FFF7ED;
+  --text-muted: #FDBA74;
+  --btn-primary-bg: #F97316;
+  --btn-primary-text: #1A1412;
+  --scrollbar-bg: #1A1412;
+  --scrollbar-thumb: #4A3830;
+}
+
+[data-theme="oled"] {
+  --bg-app: #000000;
+  --bg-sidebar: #050505;
+  --bg-surface: #121212;
+  --bg-surface-hover: #1C1C1C;
+  --bg-subtle: #0A0A0A;
+  --border-color: #2E2E2E;
+  --border-subtle: #1F1F1F;
+  --text-main: #FFFFFF;
+  --text-muted: #888888;
+  --btn-primary-bg: #FFFFFF;
+  --btn-primary-text: #000000;
+  --scrollbar-bg: #000000;
+  --scrollbar-thumb: #2A2A2A;
+}
+
+/* ========================================================
+   Light Theme Component Overrides
+   ======================================================== */
+[data-theme="light"] .bg-\[\#212121\] { background-color: #F7F7F8 !important; }
+[data-theme="light"] .bg-\[\#171717\] { background-color: #FFFFFF !important; }
+[data-theme="light"] .bg-\[\#2F2F2F\] { background-color: #FFFFFF !important; }
+[data-theme="light"] .bg-\[\#262626\] { background-color: #F3F4F6 !important; }
+[data-theme="light"] .bg-\[\#1E1E1E\] { background-color: #F9FAFB !important; }
+[data-theme="light"] .bg-\[\#1C1C1C\] { background-color: #F7F7F8 !important; }
+[data-theme="light"] .bg-\[\#2A2A2A\] { background-color: #F0F0F2 !important; }
+[data-theme="light"] .bg-\[\#333333\] { background-color: #E5E7EB !important; }
+[data-theme="light"] .bg-\[\#383838\] { background-color: #E5E7EB !important; }
+[data-theme="light"] .bg-slate-900 { background-color: #FFFFFF !important; }
+[data-theme="light"] .bg-slate-950 { background-color: #F7F7F8 !important; }
+[data-theme="light"] .border-\[\#424242\] { border-color: #E5E7EB !important; }
+[data-theme="light"] .border-\[\#303030\] { border-color: #E5E7EB !important; }
+[data-theme="light"] .border-\[\#383838\] { border-color: #E5E7EB !important; }
+[data-theme="light"] .border-\[\#333333\] { border-color: #E5E7EB !important; }
+[data-theme="light"] .border-\[\#2A2A2A\] { border-color: #E5E7EB !important; }
+[data-theme="light"] .border-\[\#282828\] { border-color: #E5E7EB !important; }
+[data-theme="light"] .border-slate-800 { border-color: #E5E7EB !important; }
+[data-theme="light"] .border-slate-700 { border-color: #D1D5DB !important; }
+[data-theme="light"] .text-white { color: #111827 !important; }
+[data-theme="light"] .text-\[\#ECECEC\] { color: #1F2937 !important; }
+[data-theme="light"] .text-\[\#B4B4B4\] { color: #4B5563 !important; }
+[data-theme="light"] .text-\[\#8E8E8E\] { color: #6B7280 !important; }
+[data-theme="light"] .text-\[\#9E9E9E\] { color: #6B7280 !important; }
+[data-theme="light"] .text-\[\#787878\] { color: #9CA3AF !important; }
+[data-theme="light"] .text-slate-100 { color: #111827 !important; }
+[data-theme="light"] .text-slate-200 { color: #1F2937 !important; }
+[data-theme="light"] .text-slate-300 { color: #374151 !important; }
+[data-theme="light"] .text-slate-400 { color: #6B7280 !important; }
+[data-theme="light"] .hover\:bg-\[\#383838\]:hover { background-color: #F3F4F6 !important; }
+[data-theme="light"] .hover\:bg-\[\#2F2F2F\]:hover { background-color: #F3F4F6 !important; }
+[data-theme="light"] .hover\:bg-\[\#2A2A2A\]:hover { background-color: #F0F0F2 !important; }
+[data-theme="light"] .hover\:bg-\[\#212121\]:hover { background-color: #F0F0F2 !important; }
+[data-theme="light"] .hover\:bg-\[\#353535\]:hover { background-color: #F0F0F2 !important; }
+
+/* ========================================================
+   Midnight Navy Overrides
+   ======================================================== */
+[data-theme="midnight"] .bg-\[\#212121\] { background-color: #0B1120 !important; }
+[data-theme="midnight"] .bg-\[\#171717\] { background-color: #070D18 !important; }
+[data-theme="midnight"] .bg-\[\#2F2F2F\] { background-color: #152238 !important; }
+[data-theme="midnight"] .bg-\[\#262626\] { background-color: #0F1A2C !important; }
+[data-theme="midnight"] .bg-\[\#1E1E1E\] { background-color: #09101C !important; }
+[data-theme="midnight"] .bg-\[\#1C1C1C\] { background-color: #0B1120 !important; }
+[data-theme="midnight"] .bg-\[\#2A2A2A\] { background-color: #121E33 !important; }
+[data-theme="midnight"] .bg-\[\#333333\] { background-color: #1E2E4A !important; }
+[data-theme="midnight"] .bg-\[\#383838\] { background-color: #1E2E4A !important; }
+[data-theme="midnight"] .border-\[\#424242\] { border-color: #243552 !important; }
+[data-theme="midnight"] .border-\[\#303030\] { border-color: #19273D !important; }
+[data-theme="midnight"] .border-\[\#383838\] { border-color: #1F304A !important; }
+[data-theme="midnight"] .border-\[\#333333\] { border-color: #19273D !important; }
+[data-theme="midnight"] .border-\[\#2A2A2A\] { border-color: #19273D !important; }
+[data-theme="midnight"] .border-\[\#282828\] { border-color: #19273D !important; }
+[data-theme="midnight"] .text-white { color: #F8FAFC !important; }
+[data-theme="midnight"] .text-\[\#ECECEC\] { color: #F1F5F9 !important; }
+[data-theme="midnight"] .text-\[\#B4B4B4\] { color: #CBD5E1 !important; }
+[data-theme="midnight"] .text-\[\#8E8E8E\] { color: #94A3B8 !important; }
+[data-theme="midnight"] .text-\[\#9E9E9E\] { color: #94A3B8 !important; }
+[data-theme="midnight"] .hover\:bg-\[\#383838\]:hover { background-color: #1E2E4A !important; }
+[data-theme="midnight"] .hover\:bg-\[\#2F2F2F\]:hover { background-color: #1E2E4A !important; }
+[data-theme="midnight"] .hover\:bg-\[\#2A2A2A\]:hover { background-color: #16253E !important; }
+[data-theme="midnight"] .hover\:bg-\[\#212121\]:hover { background-color: #16253E !important; }
+[data-theme="midnight"] .hover\:bg-\[\#353535\]:hover { background-color: #1E2E4A !important; }
+
+/* ========================================================
+   Forest Emerald Overrides
+   ======================================================== */
+[data-theme="emerald"] .bg-\[\#212121\] { background-color: #0B1712 !important; }
+[data-theme="emerald"] .bg-\[\#171717\] { background-color: #06100C !important; }
+[data-theme="emerald"] .bg-\[\#2F2F2F\] { background-color: #142820 !important; }
+[data-theme="emerald"] .bg-\[\#262626\] { background-color: #0F2019 !important; }
+[data-theme="emerald"] .bg-\[\#1E1E1E\] { background-color: #08140E !important; }
+[data-theme="emerald"] .bg-\[\#1C1C1C\] { background-color: #0B1712 !important; }
+[data-theme="emerald"] .bg-\[\#2A2A2A\] { background-color: #11251D !important; }
+[data-theme="emerald"] .bg-\[\#333333\] { background-color: #1C382C !important; }
+[data-theme="emerald"] .bg-\[\#383838\] { background-color: #1C382C !important; }
+[data-theme="emerald"] .border-\[\#424242\] { border-color: #244839 !important; }
+[data-theme="emerald"] .border-\[\#303030\] { border-color: #193328 !important; }
+[data-theme="emerald"] .border-\[\#383838\] { border-color: #1E3E30 !important; }
+[data-theme="emerald"] .border-\[\#333333\] { border-color: #193328 !important; }
+[data-theme="emerald"] .border-\[\#2A2A2A\] { border-color: #193328 !important; }
+[data-theme="emerald"] .border-\[\#282828\] { border-color: #193328 !important; }
+[data-theme="emerald"] .text-white { color: #F0FDF4 !important; }
+[data-theme="emerald"] .text-\[\#ECECEC\] { color: #DCFCE7 !important; }
+[data-theme="emerald"] .text-\[\#B4B4B4\] { color: #BBF7D0 !important; }
+[data-theme="emerald"] .text-\[\#8E8E8E\] { color: #86EFAC !important; }
+[data-theme="emerald"] .text-\[\#9E9E9E\] { color: #86EFAC !important; }
+[data-theme="emerald"] .hover\:bg-\[\#383838\]:hover { background-color: #1C382C !important; }
+[data-theme="emerald"] .hover\:bg-\[\#2F2F2F\]:hover { background-color: #1C382C !important; }
+[data-theme="emerald"] .hover\:bg-\[\#2A2A2A\]:hover { background-color: #142B21 !important; }
+[data-theme="emerald"] .hover\:bg-\[\#212121\]:hover { background-color: #142B21 !important; }
+[data-theme="emerald"] .hover\:bg-\[\#353535\]:hover { background-color: #1C382C !important; }
+
+/* ========================================================
+   Cyber Violet / Colourful Overrides
+   ======================================================== */
+[data-theme="colourful"] .bg-\[\#212121\] { background-color: #130D24 !important; }
+[data-theme="colourful"] .bg-\[\#171717\] { background-color: #0D0819 !important; }
+[data-theme="colourful"] .bg-\[\#2F2F2F\] { background-color: #22163D !important; }
+[data-theme="colourful"] .bg-\[\#262626\] { background-color: #1B1133 !important; }
+[data-theme="colourful"] .bg-\[\#1E1E1E\] { background-color: #110B21 !important; }
+[data-theme="colourful"] .bg-\[\#1C1C1C\] { background-color: #130D24 !important; }
+[data-theme="colourful"] .bg-\[\#2A2A2A\] { background-color: #1E1338 !important; }
+[data-theme="colourful"] .bg-\[\#333333\] { background-color: #312057 !important; }
+[data-theme="colourful"] .bg-\[\#383838\] { background-color: #312057 !important; }
+[data-theme="colourful"] .border-\[\#424242\] { border-color: #3D286C !important; }
+[data-theme="colourful"] .border-\[\#303030\] { border-color: #2C1D4E !important; }
+[data-theme="colourful"] .border-\[\#383838\] { border-color: #35235D !important; }
+[data-theme="colourful"] .border-\[\#333333\] { border-color: #2C1D4E !important; }
+[data-theme="colourful"] .border-\[\#2A2A2A\] { border-color: #2C1D4E !important; }
+[data-theme="colourful"] .border-\[\#282828\] { border-color: #2C1D4E !important; }
+[data-theme="colourful"] .text-white { color: #FDF4FF !important; }
+[data-theme="colourful"] .text-\[\#ECECEC\] { color: #F5D0FE !important; }
+[data-theme="colourful"] .text-\[\#B4B4B4\] { color: #E879F9 !important; }
+[data-theme="colourful"] .text-\[\#8E8E8E\] { color: #D8B4FE !important; }
+[data-theme="colourful"] .text-\[\#9E9E9E\] { color: #D8B4FE !important; }
+[data-theme="colourful"] .hover\:bg-\[\#383838\]:hover { background-color: #312057 !important; }
+[data-theme="colourful"] .hover\:bg-\[\#2F2F2F\]:hover { background-color: #312057 !important; }
+[data-theme="colourful"] .hover\:bg-\[\#2A2A2A\]:hover { background-color: #261746 !important; }
+[data-theme="colourful"] .hover\:bg-\[\#212121\]:hover { background-color: #261746 !important; }
+[data-theme="colourful"] .hover\:bg-\[\#353535\]:hover { background-color: #312057 !important; }
+
+/* ========================================================
+   Warm Sunset Overrides
+   ======================================================== */
+[data-theme="sunset"] .bg-\[\#212121\] { background-color: #1A1412 !important; }
+[data-theme="sunset"] .bg-\[\#171717\] { background-color: #120D0B !important; }
+[data-theme="sunset"] .bg-\[\#2F2F2F\] { background-color: #291F1B !important; }
+[data-theme="sunset"] .bg-\[\#262626\] { background-color: #211915 !important; }
+[data-theme="sunset"] .bg-\[\#1E1E1E\] { background-color: #17110E !important; }
+[data-theme="sunset"] .bg-\[\#1C1C1C\] { background-color: #1A1412 !important; }
+[data-theme="sunset"] .bg-\[\#2A2A2A\] { background-color: #241A17 !important; }
+[data-theme="sunset"] .bg-\[\#333333\] { background-color: #3B2D27 !important; }
+[data-theme="sunset"] .bg-\[\#383838\] { background-color: #3B2D27 !important; }
+[data-theme="sunset"] .border-\[\#424242\] { border-color: #4A3830 !important; }
+[data-theme="sunset"] .border-\[\#303030\] { border-color: #332620 !important; }
+[data-theme="sunset"] .border-\[\#383838\] { border-color: #423028 !important; }
+[data-theme="sunset"] .border-\[\#333333\] { border-color: #332620 !important; }
+[data-theme="sunset"] .border-\[\#2A2A2A\] { border-color: #332620 !important; }
+[data-theme="sunset"] .border-\[\#282828\] { border-color: #332620 !important; }
+[data-theme="sunset"] .text-white { color: #FFF7ED !important; }
+[data-theme="sunset"] .text-\[\#ECECEC\] { color: #FFEDD5 !important; }
+[data-theme="sunset"] .text-\[\#B4B4B4\] { color: #FED7AA !important; }
+[data-theme="sunset"] .text-\[\#8E8E8E\] { color: #FDBA74 !important; }
+[data-theme="sunset"] .text-\[\#9E9E9E\] { color: #FDBA74 !important; }
+[data-theme="sunset"] .hover\:bg-\[\#383838\]:hover { background-color: #3B2D27 !important; }
+[data-theme="sunset"] .hover\:bg-\[\#2F2F2F\]:hover { background-color: #3B2D27 !important; }
+[data-theme="sunset"] .hover\:bg-\[\#2A2A2A\]:hover { background-color: #2F231E !important; }
+[data-theme="sunset"] .hover\:bg-\[\#212121\]:hover { background-color: #2F231E !important; }
+[data-theme="sunset"] .hover\:bg-\[\#353535\]:hover { background-color: #3B2D27 !important; }
+
+/* ========================================================
+   Pure OLED Black Overrides
+   ======================================================== */
+[data-theme="oled"] .bg-\[\#212121\] { background-color: #000000 !important; }
+[data-theme="oled"] .bg-\[\#171717\] { background-color: #050505 !important; }
+[data-theme="oled"] .bg-\[\#2F2F2F\] { background-color: #121212 !important; }
+[data-theme="oled"] .bg-\[\#262626\] { background-color: #0A0A0A !important; }
+[data-theme="oled"] .bg-\[\#1E1E1E\] { background-color: #000000 !important; }
+[data-theme="oled"] .bg-\[\#1C1C1C\] { background-color: #000000 !important; }
+[data-theme="oled"] .bg-\[\#2A2A2A\] { background-color: #151515 !important; }
+[data-theme="oled"] .bg-\[\#333333\] { background-color: #1C1C1C !important; }
+[data-theme="oled"] .bg-\[\#383838\] { background-color: #1C1C1C !important; }
+[data-theme="oled"] .border-\[\#424242\] { border-color: #2E2E2E !important; }
+[data-theme="oled"] .border-\[\#303030\] { border-color: #1F1F1F !important; }
+[data-theme="oled"] .border-\[\#383838\] { border-color: #262626 !important; }
+[data-theme="oled"] .border-\[\#333333\] { border-color: #1F1F1F !important; }
+[data-theme="oled"] .border-\[\#2A2A2A\] { border-color: #1F1F1F !important; }
+[data-theme="oled"] .border-\[\#282828\] { border-color: #1F1F1F !important; }
+[data-theme="oled"] .text-white { color: #FFFFFF !important; }
+[data-theme="oled"] .text-\[\#ECECEC\] { color: #F5F5F5 !important; }
+[data-theme="oled"] .text-\[\#B4B4B4\] { color: #CCCCCC !important; }
+[data-theme="oled"] .text-\[\#8E8E8E\] { color: #888888 !important; }
+[data-theme="oled"] .text-\[\#9E9E9E\] { color: #888888 !important; }
+[data-theme="oled"] .hover\:bg-\[\#383838\]:hover { background-color: #1C1C1C !important; }
+[data-theme="oled"] .hover\:bg-\[\#2F2F2F\]:hover { background-color: #1C1C1C !important; }
+[data-theme="oled"] .hover\:bg-\[\#2A2A2A\]:hover { background-color: #181818 !important; }
+[data-theme="oled"] .hover\:bg-\[\#212121\]:hover { background-color: #181818 !important; }
+[data-theme="oled"] .hover\:bg-\[\#353535\]:hover { background-color: #1C1C1C !important; }
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-app);
+    color: var(--text-main);
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(1.2);
+}
+
+/* Minimalist selection style */
+::selection {
+  background-color: var(--border-color);
+  color: var(--text-main);
+}
